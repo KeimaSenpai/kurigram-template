@@ -9,8 +9,6 @@ Este es un bot de Telegram que permite a los usuarios interactuar.
 
 ## Funciones
 -
--
--
 
 ## Instalación
 1. Clona el repositorio:
@@ -26,7 +24,7 @@ Este es un bot de Telegram que permite a los usuarios interactuar.
 3. Instala las dependencias:
    ```bash
    pip install -r requirements.txt
-```
+   ```
 
 4. Configura el bot:
 - Crea un archivo `.env` y agrega tu token de bot:
@@ -38,5 +36,5 @@ Este es un bot de Telegram que permite a los usuarios interactuar.
 5. Ejecuta el bot:
    ```bash
    python bot.py
-```
+   ```
 
