@@ -1,0 +1,4 @@
+{
+    "welcome": "<b>Hello</b>, {first_name}. \n\nWelcome to <b>{bot_name}</b>!\n\nI am a bot ",
+    "info": "This is a sample bot"
+}
