@@ -1,4 +1,15 @@
 import os
+from pathlib import Path
+
+# Solo cargar .env si existe (desarrollo)
+env_file = Path(".env")
+if env_file.exists():
+    from dotenv import load_dotenv
+    load_dotenv()
+    print("🔧 Modo desarrollo: variables cargadas desde .env")
+else:
+    print("🚀 Modo producción: usando variables de entorno del sistema")
+
 
 API_ID = int(os.getenv("API_ID", ""))
 API_HASH = os.getenv("API_HASH", "")
