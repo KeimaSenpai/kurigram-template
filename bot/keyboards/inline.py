@@ -1,7 +1,7 @@
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-def start_keyboard():
+async def start_keyboard():
 
     return InlineKeyboardMarkup([
         [
@@ -14,10 +14,10 @@ def start_keyboard():
     
 
 
-def return_keyboard():
+async def return_keyboard(callback="start"):
     """Teclado para volver al menú principal"""
     return InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("Volver", callback_data="start")
+            InlineKeyboardButton("Volver", callback_data=callback)
         ]
     ])

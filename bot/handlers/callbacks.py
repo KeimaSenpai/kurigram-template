@@ -14,7 +14,7 @@ async def start_callback(client, callback_query):
     # Editamos el mensaje de bienvenida
     await callback_query.edit_message_text(
         lang_manager.get_text("welcome", lang_code).format(first_name=first_name, bot_name=bot_name),
-        reply_markup=start_keyboard()
+        reply_markup= await start_keyboard()
     )
 
 
@@ -24,5 +24,5 @@ async def info_callback(client: Client, callback_query: CallbackQuery):
     # Editamos el mensaje de información
     await callback_query.edit_message_text(
         lang_manager.get_text("info", lang_code),
-        reply_markup=return_keyboard()
+        reply_markup= await return_keyboard()
     )

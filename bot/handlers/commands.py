@@ -17,5 +17,5 @@ async def start_command(client: Client, message: Message):
     await message.reply_photo(
         HOME_IMG, 
         caption=lang_manager.get_text("welcome", lang_code).format(first_name=first_name, bot_name=bot_name) ,
-        reply_markup=start_keyboard()
+        reply_markup= await start_keyboard()
     )
