@@ -1,0 +1,1 @@
+"""Funciones de consultas a la base de datos"""

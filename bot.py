@@ -11,7 +11,7 @@ shutdown_event = asyncio.Event()
 
 
 def signal_handler(signum, frame):
-    print(f"Señal {signum} recibida, iniciando cierre del bot...")
+    print(f"Señal {signum} recibida, iniciando cierre del bot")
     shutdown_event.set()
 
 async def shutdown_handler():
@@ -29,11 +29,11 @@ async def main():
         # Inicia el bot
         await app.start()
         # Optimizar conexión al datacenter más cercano
-        try:
-            await app.set_dc()
-            print("✅ Conexión optimizada al datacenter más cercano")
-        except Exception as e:
-            print(f"⚠️ No se pudo optimizar datacenter: {e}")
+        # try:
+        #     await app.set_dc()
+        #     print("✅ Conexión optimizada al datacenter más cercano")
+        # except Exception as e:
+        #     print(f"⚠️ No se pudo optimizar datacenter: {e}")
         print('Bot iniciado')
 
 
